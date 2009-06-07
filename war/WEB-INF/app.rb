@@ -1,10 +1,8 @@
 require 'rubygems'
 require 'sinatra'
 require 'appengine-apis/logger'
-require 'lib/json'
 require 'json'
 require 'robot'
-import org.json.JSONObject
  
 get '/' do
   "I AM WAVE ROBOT! I sing like Frank on JRuby!"
