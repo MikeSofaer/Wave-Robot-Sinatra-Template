@@ -28,7 +28,7 @@ post '/_wave/robot/:command' do
   logger.info "Input: " + request.env['rack.request.form_vars']
   json = JSON(request.env['rack.request.form_vars'])
   content_type 'application/json' 
-  context = robot.run_command(params[:command], request.env['rack.request.form_vars')
+  context = robot.run_command(params[:command], json)
   output = AbstractRobot.serialize_context(context)
   logger.info "Output: " + output
 end
