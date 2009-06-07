@@ -8,11 +8,13 @@ class Robot < AbstractRobot
     @name
   end
   def DOCUMENT_CHANGED(properties, context)
-    root_wavelet = context.GetRootWavelet()
-    root_wavelet.CreateBlip().GetDocument().SetText("I see you changing the doc!")  
+    wavelet = context.GetWavelets()[0]
+    blip = context.GetBlipById(wavelet.GetRootBlipId())
+    blip.GetDocument().SetText('Only I get to edit the top blip!')
   end
   def whine(events, context)
-    root_wavelet = context.GetRootWavelet()
-    root_wavelet.CreateBlip().GetDocument().SetText("Why don't you like me?")
+    wavelet = context.GetWavelets()[0]
+    blip = context.GetBlipById(wavelet.GetRootBlipId())
+    blip.GetDocument().SetText("It's " + Time.now.to_s)
   end
 end
