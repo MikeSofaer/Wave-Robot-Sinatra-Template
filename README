@@ -1,0 +1,10 @@
+This is a war template for a Google Wave Robot in Sinatra.
+
+To use it, cd to war/WEB-INF
+
+Edit robot.yml to set capabilities.
+Edit robot.rb to create behavior.
+Edit appengine.xml and set the application field to the name of your appspot JVM app.
+appcfg update ..
+
+You should now be able to add your robot to a wave!

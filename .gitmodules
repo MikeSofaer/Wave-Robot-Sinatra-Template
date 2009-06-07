@@ -1,0 +1,3 @@
+[submodule "war/WEB-INF/lib/waveapi"]
+	path = war/WEB-INF/lib/waveapi
+	url = git@github.com:MikeSofaer/wave-robot-ruby-client.git

@@ -1,0 +1,13 @@
+== 0.0.3 2009-04-25
+
+* Added Memcache and Mail APIs
+* Tries to automatically add SDK to your classpath if it's missing.
+* Added AppEngine::Testing.boot to configure APIs for using in IRB.
+
+== 0.0.2 2009-04-15
+
+* Add URLFetch and Users APIs
+
+== 0.0.1 2009-04-02
+
+* Initial release

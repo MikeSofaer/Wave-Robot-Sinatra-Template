@@ -1,0 +1,6 @@
+name:  Sinatra Bot
+capabilities:
+  DOCUMENT_CHANGED:
+crons:
+  whine: 20
+  

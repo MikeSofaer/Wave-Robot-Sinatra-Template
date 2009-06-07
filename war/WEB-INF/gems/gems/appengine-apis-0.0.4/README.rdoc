@@ -1,0 +1,47 @@
+= appengine-apis
+
+* http://code.google.com/p/appengine-jruby
+
+== DESCRIPTION:
+
+APIs and utilities for using JRuby on Google App Engine.
+
+To load the API stubs in IRB simply
+  require 'rubygems'
+  require 'appengine-apis/local_boot'
+
+This will configure access to the same Datastore as running
+
+  $ dev_appserver.sh .
+
+See these classes for an overview of each API:
+- AppEngine::Logger
+- AppEngine::Testing
+- AppEngine::Users
+- AppEngine::Mail
+- AppEngine::Memcache
+- AppEngine::URLFetch
+- AppEngine::Datastore
+
+Unless you're implementing your own ORM, you probably want to use the
+DataMapper API instead of the lower level AppEngine::Datastore API.
+
+== REQUIREMENTS:
+
+* Google App Engine SDK for Java (http://code.google.com/appengine)
+
+== LICENSE:
+
+Copyright 2009 Google Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
