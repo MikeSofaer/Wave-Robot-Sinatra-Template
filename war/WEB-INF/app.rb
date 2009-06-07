@@ -20,6 +20,7 @@ post '/_wave/robot/jsonrpc' do
   context = robot.execute_json_rpc!(json)
   output = AbstractRobot.serialize_context(context)
   logger.info "Output: " + output
+  output
 end
 
 post '/_wave/robot/:command' do
@@ -29,6 +30,7 @@ post '/_wave/robot/:command' do
   context = robot.run_command(params[:command], json)
   output = AbstractRobot.serialize_context(context)
   logger.info "Output: " + output
+  output
 end
 
 def robot
