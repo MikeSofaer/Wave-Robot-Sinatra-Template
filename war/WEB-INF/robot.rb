@@ -12,9 +12,9 @@ class Robot < AbstractRobot
     blip = context.GetBlipById(wavelet.GetRootBlipId())
     blip.GetDocument().SetText('Only I get to edit the top blip!')
   end
-  def whine(events, context)
+  def clock(event, context)
     wavelet = context.GetWavelets()[0]
     blip = context.GetBlipById(wavelet.GetRootBlipId())
-    blip.GetDocument().SetText("It's " + Time.now.to_s)
+	blip.GetDocument().SetText("It's " + Time.now.to_s)
   end
 end

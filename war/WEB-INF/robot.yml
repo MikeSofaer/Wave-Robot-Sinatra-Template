@@ -2,5 +2,5 @@ name:  Sinatra Bot
 capabilities:
   DOCUMENT_CHANGED:
 crons:
-  whine: 20
+  clock: 20
   
