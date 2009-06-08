@@ -1,6 +1,0 @@
-name:  Sinatra Bot
-capabilities:
-  DOCUMENT_CHANGED:
-crons:
-  clock: 20
-  
