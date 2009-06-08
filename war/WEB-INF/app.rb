@@ -34,7 +34,7 @@ post '/_wave/robot/:command' do
 end
 
 def robot
-  Robot.from_yml('robot.yml')  
+  Robot.new
 end
 
 def logger
