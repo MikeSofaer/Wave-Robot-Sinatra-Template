@@ -14,8 +14,10 @@ get '/_wave/capabilities.xml' do
 end
 
 post '/_wave/robot/jsonrpc' do
-  logger.info "Input: " + request.env['rack.request.form_vars']
-  json = JSON(request.env['rack.request.form_vars'])
+  logger.info "Rack Request: " + request.inspect
+  input = request.body.read
+  logger.info "Input: " + input
+  json = JSON(input)
   content_type 'application/json'
   context = robot.execute_json_rpc!(json)
   output = AbstractRobot.serialize_context(context)
